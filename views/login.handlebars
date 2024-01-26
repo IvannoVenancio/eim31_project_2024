@@ -1,1 +1,24 @@
 <h1>Login</h1>
+<form method="post" action="/cadastro">
+<input type="text" name="nome" id="">
+<br>
+<input type="text" name="idade" id=""><br>
+<input type="submit" value="Cadastro">
+</form>
+
+
+<h2>Tabela de Clientes</h2>
+<table border="1">
+    <tr>
+      <td>ID</td>
+      <td>Nome</td>
+      <td>Idade</td>
+    <tr>
+   {{#each clientes}}
+       <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.nome}}</td>
+        <td>{{this.idade}}</td>
+    </tr>
+   {{/each}}
+</table>
