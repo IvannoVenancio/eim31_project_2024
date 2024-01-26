@@ -3,7 +3,7 @@ module.exports = {
     host: "localhost",
     username: "root",
     password:"",
-    database:"facebook_aula",
+    database:"teste_a",
     define: {
         timestamps: true,
         underscored: true,
